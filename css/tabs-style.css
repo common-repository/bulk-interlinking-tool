@@ -1,0 +1,133 @@
+.tabs {
+    width: 100%;
+    display: block;
+}
+
+.tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.tab-links li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.tab-links a {
+    text-decoration: none;
+    padding: 9px 15px;
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+    background: #f0f0f1;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    transition: all linear 0.15s;
+    border: 1px solid #2271b180;
+    border-bottom: 3px solid #2271b180;
+}
+
+.tab-links a:hover {
+    background: #2271b180;
+    color: #000;
+}
+
+.tab-content .tab {
+    display: none;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.tab-content .active {
+    display: block;
+}
+
+.tab-links a.active{
+    background: #2271b1;
+    color:#fff;
+    border-bottom: 3px solid #2271b1;
+}
+a:focus{
+    box-shadow: none;
+}
+
+.service-account-input-box, 
+.indexing-input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-account-input-box>button,
+.indexing-input-box>button {
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 200px;
+}
+
+.service-account-input-box>button:hover,
+.indexing-input-box>button:hover {
+    background-color: white;
+    color: #0073e6;
+}
+
+/* Legend Styling */
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Radio Button Group */
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Custom Radio Button */
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    background: #fff;
+    margin-right: 10px;
+    position: relative;
+}
+
+.radio-group input[type="radio"]:checked + .radio-label .radio-custom {
+    background: #007bff;
+}
+
+.radio-group input[type="radio"]:checked + .radio-label .radio-custom::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Radio Button Text */
+.radio-text {
+    margin-left: 5px;
+}

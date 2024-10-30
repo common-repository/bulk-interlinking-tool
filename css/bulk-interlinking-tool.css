@@ -1,0 +1,219 @@
+.wrap h2 {
+    color: #36304a;
+    text-align: center;
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    line-height: normal;
+}
+.wrap .introduction > *{
+    font-size: 14px;
+}
+
+.main-box-bulk-interlinking-tool {
+    margin: 40px 0;
+}
+
+.main-box-bulk-interlinking-tool>button {
+    padding: 5px 15px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+button:active {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.main-box-bulk-interlinking-tool>button:hover {
+    background-color: white;
+    color: #0073e6;
+}
+
+#display-csv-table>table,
+.display-response-box>table {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+
+#display-csv-table>table thead tr,
+.display-response-box>table thead tr {
+    background-color: #36304a;
+    color: white;
+    height: 60px;
+}
+
+#display-csv-table>table tr,
+.display-response-box>table tr {
+    height: 50px;
+}
+
+#display-csv-table>table td,
+.display-response-box>table td {
+    padding-left: 5px;
+}
+
+#display-csv-table>table th,
+.display-response-box>table th {
+    padding: 0 10px;
+}
+
+#display-csv-table>table tr:nth-child(even),
+.display-response-box>table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.display-response-box>table td.red{
+    color: red;
+}
+.display-response-box{
+    margin: 3rem 0;
+}
+
+.edit-row-btn {
+    height: 50px;
+    background: inherit;
+    border: none;
+}
+
+.save-row-btn {
+    height: 30px;
+    padding: 5px;
+    color: #0073e6;
+    background: white;
+    margin: 10px 0;
+    border: 1px solid #0073e6;
+    border-radius: 4px;
+}
+
+button.save-table-to-post {
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 6px;
+    background: blueviolet;
+    color: white;
+    font-weight: 600;
+    float: right;
+    margin: 15px;
+    border-color: blueviolet;
+}
+
+p.result-paragraph {
+    text-align: center;
+    font-size: 32px;
+}
+
+p.green {
+    color: yellowgreen;
+    line-height: 10rem;
+}
+
+p.red {
+    color: red;
+    line-height: 3rem;
+}
+
+/* Pagination. */
+.pagination-link {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#page-numbersP {
+    padding: 0;
+    margin: 0 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+#page-numbersP > li {
+    width: 50px;
+}
+
+#page-numbersP li a {
+    color: #36304a;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    opacity: .7;
+}
+
+#page-numbersP li a:hover {
+    opacity: 1;
+    background: #ccc;
+    border: 2px solid #ccc;
+}
+
+#page-numbersP li a.active {
+    opacity: 1;
+    background: #36304a;
+    color: #fff;
+}
+#display-csv-table div button,
+.display-response-box div button{
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;   
+  font-size: inherit;
+  font-weight: 700; 
+  position: relative;
+}
+#display-csv-table .spin, 
+.display-response-box .spin {
+  width: 5em;
+  height: 5em;
+  padding: 0;
+  color: #702c91;
+}
+#display-csv-table .spin::after,
+.display-response-box .spin::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0 solid transparent; 
+  border-top: 2px solid;
+  border-left-width: 2px; 
+  border-right-width: 2px; 
+  border-radius: 10%;
+  animation: infiniteRotate 1s infinite;
+  transition: border-top-color ease-in 0.5s, transform ease-in 0.1s;
+}
+#display-csv-table .circle::before,
+#display-csv-table .circle::after,
+.display-response-box .circle::before,
+.display-response-box .circle::after {
+  border-radius: 100%;
+}
+@keyframes infiniteRotate {
+  from {
+    transform: rotate(0deg);
+    border-top-color: #7cc242;
+  }
+  to {
+    transform: rotate(360deg);
+    border-top-color: #702c91;
+  } 
+}
+
+.delete-file-button {
+    background: red;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0px;
+    float: right;
+    border-radius: 6px;
+    margin: 25px 0;
+}
